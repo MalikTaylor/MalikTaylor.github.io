@@ -1,0 +1,319 @@
+
+.btn{
+    background-color: #2b2d42;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.btn:hover{
+    color: white;
+}
+
+.section-header{
+    font-size: 44px;
+    font-weight: bold;
+    padding: 75px 0px 75px 0px;
+}
+
+
+/* Hero Sectiom */
+
+#hero-section{
+    height: 100vh;
+    background-image: url("/images/hero-img.png");
+    background-repeat: no-repeat;
+    box-shadow: 0px -5px 10px 2px black;
+}
+#hero-padding{
+    margin: 0px 200px 0px 200px;
+}
+#hero-content{
+    height: 100vh;
+}
+
+#hero-info-container{
+    position: relative;
+    top: 33%;
+}
+#hello-text{
+    color: #d90429;
+    font-size: 30px;
+    font-weight: 500; /*500*/
+    margin-left: -3px;
+    margin-bottom: 0px;
+}
+#signature{
+    font-size: 90px !important;
+    font-weight: bold;
+    padding: 5px;
+    margin-top: -10px;
+}
+
+#sub-head{
+    padding: 12px;
+    font-size: 30px !important;
+    font-weight: 500;
+    padding: 0px;
+    margin: 0px;
+}
+
+.btn-container{
+    margin-top: 40px;
+}
+
+.hero-btn{
+    height: 50px !important;
+    max-width: 150px;
+    width: auto !important;
+    margin-right: 30px;
+    padding: 0px 30px 0px 30px !important;
+    background-color: #d90429 !important;
+    box-shadow: -4px 11px 20px #a6031d;
+    font-size: medium !important; 
+}
+
+.hero-btn:hover{
+    transform: scale(1.05);
+    transition: transform 200ms linear;
+}
+
+#social-container{
+    position: absolute;
+    bottom: 100px;
+    margin-left: -6px;
+}
+
+.fab {
+    margin-right: 5px;
+    font-size: 40px;
+    width: 55px;
+    text-decoration: none !important;
+    color: #d90429 !important;
+}
+
+.fab:hover {
+    transform: translateY(-10px);
+    transition: transform 500ms ease-in-out 25ms ;
+}
+
+@media (max-width: 900px) {
+    #signature{
+        font-size: 65px !important;
+    }
+    #sub-head{
+        font-size: 20px;
+    }
+    .hero-btn{
+        width: auto !important;
+        font-size: medium;  
+    }
+}
+
+@media (max-width: 580px) {
+    #hero-padding{
+        margin: 0px 50px 0px 50px;
+    }
+    .hero-btn{
+        width: 100px; 
+        font-size: small;  
+    }
+    
+}
+
+@media (min-width: 420px) {
+    #signature{
+       font-size: 55px;
+    }
+    #sub-head{
+        font-size: 16px;
+    }
+    .hero-btn{
+        font-size: small;
+    }
+    
+}
+
+@media (max-width: 420px) {
+    #hero-padding{
+        margin: 0px 1vw 0px 1vw;
+    }
+    #hello-text{
+        font-size: 25px;
+    }
+    #signature{
+       font-size: 50px !important;
+    }
+    #sub-head{
+        font-size: 16px !important;
+    }
+    .hero-btn{
+        width: 100px !important;
+        padding: 0px !important;
+        font-size: small !important;
+    }
+    
+}
+
+/* About Section */
+
+#about-section{
+    height: 100vh;
+    background-color: #fafafa;
+}
+#about-content{
+    height: 100vh;
+}
+#abt-img-container{
+    width: 300px;
+    position: relative;
+    right: 0px;
+    border-radius: 5px;
+    border: black solid 1px;
+    box-shadow: -15px 15px 0px black;
+}
+#abt-me-img{
+    width: 300px;
+    padding: 10px;
+}
+
+.recent-grid{
+    margin-top: 30px;
+}
+
+.recent-tech-item{
+    width: 150px;
+    margin: 0px 8px 8px 8px;
+    height: 38px;
+}
+
+#education{
+    padding-bottom: 10px;
+}
+
+#degree{
+    font-size: 16px;
+    font-weight: 500;
+}
+
+#university{
+    font-size: 15px;
+    font-weight: 500;
+}
+
+
+/* Projects Section */
+#project-section{
+    height: 100vh;
+    background-image: url(/images/project-background.png);
+}
+
+.project-nav-link{
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #d90429 !important;
+}
+
+.project-nav-bullet{
+    font-size: 20px;
+}
+
+
+#project-grid{
+    justify-content: center;
+}
+
+.work-container{
+    border-radius: 15px;
+    margin: 15px;
+    padding: 15px 15px 0px 15px;
+    background-color: #2b2d42;
+}
+
+.work-img{
+    border-radius: 15px;
+    height: 225px;
+    width: 100%;
+}
+
+.work-div-heading{
+    padding:15px;
+    font-size: 28px;
+    color: white;
+}
+
+/* Skills Section */
+#skills-section{
+    height: 100vh;
+    background-image: url(/images/skills-background.png);
+}
+
+.skill-heading{
+    text-align: center;
+    text-decoration: underline;
+}
+
+/* Contact Section */
+#contact-section{
+    height: 100vh;
+    background-image: url(/images/contact-background.png);
+}
+
+#form-container{
+    position: relative;
+    padding: 30px;
+    width: 500px;
+    color: #d90429;
+    font-weight: bold;
+    top: 20%;
+    border-radius: 5px;
+}
+
+#contact-text{
+    text-align: center;
+    font-size: 20px;
+}
+
+#form-img{
+    position: absolute;
+    margin-top: 130px;
+    left: 34%;
+}
+
+.form-item{
+    margin-top: 30px;
+}
+
+.form-label{
+    padding: 0px;
+}
+
+#contact-btn{
+    height: 44px;
+    width: 120px;
+}
+
+
+/* Footer */
+
+footer{
+    display: flex;
+    height: 100px;
+    background-color: #2b2d42;
+    justify-content: center;
+}
+
+#footer-select{ 
+    margin-top: 40px;
+}
+
+.footer-link{
+    padding: 15px;
+    text-decoration: none;
+    color: white !important;
+}
+
+.footer-link:hover{
+    text-decoration: underline;
+}
