@@ -108,7 +108,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 Malik Taylor - [LinkedIn](https://linkedin.com/in/-maliktaylor) - malik.omar.taylor@gmail.com
 
-<!-- Project Link: [https://github.com/MalikTaylor/Pomo-Grow](https://github.com/MalikTaylor/Pomo-Grow) -->
+Project Link: [https://github.com/MalikTaylor/Pomo-Grow](https://github.com/MalikTaylor/Pomo-Grow)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -121,4 +121,4 @@ Malik Taylor - [LinkedIn](https://linkedin.com/in/-maliktaylor) - malik.omar.tay
 [license-url]: https://choosealicense.com/licenses/mit
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/-maliktaylor
-[product-screenshot]: public\assets\images\portfolio-thumbnail.png
+[product-screenshot]: public/assets/images/portfolio-thumbnail.png
