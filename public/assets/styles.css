@@ -16,6 +16,37 @@
     padding: 75px 0px 75px 0px;
 }
 
+/* Nav Section */
+.navbar{
+    position: fixed; 
+    color: white !important; 
+    height: 75px; 
+    width: 100%;  
+    padding: 0px 30px 0px 75px;
+    background-color: #2b2d42 !important;
+    z-index: 3;
+}
+
+#nav-icon{
+    height: 80px;
+    margin-bottom: 10px;
+}
+
+.nav-item{
+    padding: 20px 10px 20px 10px ;
+}
+
+
+.nav-link{
+    font-size: 16px;
+    color: rgba(255, 255, 255, 1) !important;
+}
+
+.nav-link:hover{
+    text-decoration: underline !important;
+    text-decoration-thickness: 3px !important;
+    text-underline-offset: 3px;
+}
 
 /* Hero Sectiom */
 
@@ -71,6 +102,11 @@
     background-color: #d90429 !important;
     box-shadow: -4px 11px 20px #a6031d;
     font-size: medium !important; 
+}
+
+.hero-btn-link{
+    color: white !important;
+    text-decoration: none;
 }
 
 .hero-btn:hover{
@@ -181,10 +217,15 @@
     margin-top: 30px;
 }
 
-.recent-tech-item{
-    width: 150px;
+.recent-tech{
+    width: auto;
     margin: 0px 8px 8px 8px;
     height: 38px;
+}
+
+.recent-tech-item{
+    width: 150px;
+    box-shadow:  6px 6px 10px #a6031d;
 }
 
 #education{
@@ -213,12 +254,19 @@
     font-weight: bold;
     text-decoration: none;
     color: #d90429 !important;
+    padding: 0px;
+}
+
+.project-nav-link:hover{
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+    text-underline-offset: 3px;
 }
 
 .project-nav-bullet{
     font-size: 20px;
+    padding: 0px;
 }
-
 
 #project-grid{
     justify-content: center;
@@ -229,6 +277,11 @@
     margin: 15px;
     padding: 15px 15px 0px 15px;
     background-color: #2b2d42;
+    text-decoration: none !important;
+}
+
+.work-container:hover{
+    cursor: pointer;
 }
 
 .work-img{
