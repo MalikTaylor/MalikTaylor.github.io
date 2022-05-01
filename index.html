@@ -29,16 +29,16 @@
                         <a class="nav-link" href="#hero-section">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#about-section">About</a>
+                        <a class="nav-link" href="#about-offset">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#project-section">Projects</a>
+                        <a class="nav-link" href="#project-offset">Projects</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#skills-section">Skills</a>
+                        <a class="nav-link" href="#skills-offset">Skills</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#contact-section">Contact</a>
+                        <a class="nav-link" href="#contact-offset">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -58,7 +58,7 @@
                             <div id="sub-head"class="row">Software Developer | Robotics Hobbyist</div>
                             <div class="btn-container text-left">
                                 <button class="hero-btn btn">
-                                    <a class="hero-btn-link" href="#about-section">About Me</a>
+                                    <a class="hero-btn-link" href="#about-offset">About Me</a>
                                 </button>    
                                 <button class="hero-btn btn"><a href="../Malik Taylor's Resume.pdf" download="Malik Taylor's Resume">Resume</button>
                             </div>
@@ -69,12 +69,14 @@
                             <a href="https://www.linkedin.com/in/malik-taylor-251409194/" class="fab fa-linkedin"></a>
                         </div>
                     </div>
-                    <div id="img-container" class="col"></div>
+                    <div id="img-container" class="col"></div>  <!--Hero Portait Image Div-->
+                    <!-- <div class="nav-anchor-offset" id="about-offset"></div> -->
                 </div>
             </div>
         </main>
 
         <section id="about-section">
+            <div class="nav-anchor-offset" id="about-offset"></div>
             <div id="about-content" class="container">
                 <div class="row" >
                     <h1 class="section-header text-center">About Me</h1>
@@ -112,15 +114,17 @@
                                 </div>
                             </div>
                         </div>
+                    </div>
                 </div>
             </div>
         </section>
 
         <section id="project-section">
+            <div class="nav-anchor-offset" id="project-offset"></div>
             <div class="container">
                 <h1 class="section-header text-center" style="padding-bottom: 20px">Projects</h1>
-                <div id="project-nav-container" class="row text-center" style="justify-content: center;"> 
-                    <a class="col-md-1 project-nav-link" href="#"> ALL </a>
+                <!-- <div id="project-nav-container" class="row text-center" style="justify-content: center;"> 
+                    <a class="col-md-1 project-nav-link" href="#project-section"> ALL </a>
                     <div class="col-md-1 project-nav-bullet">/</div>
                     <a class="col-md-1 project-nav-link" href="#"> SOFTWARE </a>
                     <div class="col-md-1 project-nav-bullet">/</div>
@@ -129,17 +133,17 @@
                     <a class="col-md-1 project-nav-link" href="#"> GAMES </a>
                     <div class="col-md-1 project-nav-bullet">/</div>
                     <a class="col-md-1 project-nav-link" href="#"> UPCOMING </a>
-                </div>
+                </div> -->
                 <div style="margin-top: 30px;">
                     <div id="project-grid" class="row">
-                        <a href="./software.html" class="col-md-3 text-center work-container">
+                        <a href="./public/assets/views/software.html" class="col-md-3 text-center work-container">
                             <div>
                                 <img src="/public/assets/images/stock-software-img.jpg" class="work-img" alt="stock-software-img">
                             </div>
                             <div class="work-div-heading">Software</div>
                         </a>
                 
-                        <a href="./electronics.html" class="col-md-6 text-center work-container">
+                        <a href="./public/assets/views/electronics.html" class="col-md-6 text-center work-container">
                             <div>
                                 <img src="/public/assets/images/stock-arduino-img.png" class="work-img" alt="stock-arduino-img">
                             </div>
@@ -153,7 +157,7 @@
                             <div class="work-div-heading">Game Development</div>
                         </a>
 
-                        <a href="./upcoming.html" class="col-md-3 text-center work-container">
+                        <a href="./public/assets/views/upcoming.html" class="col-md-3 text-center work-container">
                             <div>
                                 <img src="/public/assets/images/bike-led-img.jfif" class="work-img" alt="stock-software-img">
                             </div>
@@ -166,6 +170,7 @@
         </section>
 
         <section id="skills-section">
+            <div class="nav-anchor-offset" id="skills-offset"></div>
             <div class="container">
                 <h1 class="section-header text-center">Skills</h1>
                 <div id="work-experience-grid" class="row text-center">
@@ -289,6 +294,7 @@
         </section>
 
         <section id="contact-section" class="row">
+            <div class="nav-anchor-offset" id="contact-offset"></div>
             <div id="form-img" class="d-flex justify-content-center align-self-center" >
                 <img src="/public/assets/images/contact-form-img.png">
             </div>
