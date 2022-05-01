@@ -1,3 +1,8 @@
+a, a:hover, a:focus, a:active{
+    text-decoration: none;
+    color: inherit !important;
+}
+
 .btn{
     background-color: #2b2d42;
     color: white;
@@ -13,6 +18,7 @@
     outline: none;
     box-shadow: none;
 }
+
 
 .section-header{
     font-size: 44px;
@@ -40,9 +46,9 @@
     padding: 20px 10px 20px 10px ;
 }
 
-
 .nav-link{
-    font-size: 16px;
+    font-size: 18px;
+    font-weight: bold;
     color: rgba(255, 255, 255, 1) !important;
 }
 
@@ -345,6 +351,7 @@
     color: #2b2d42;
     font-size: 17px;
     margin: 0px;
+    display: none;
 }
 
 .software-project-image{
@@ -389,7 +396,7 @@
     width: 500px;
     color: #d90429;
     font-weight: bold;
-    top: 20%;
+    /* top: 20%; */
     border-radius: 5px;
 }
 
@@ -400,8 +407,8 @@
 
 #form-img{
     position: absolute;
-    margin-top: 130px;
-    left: 34%;
+    /* margin-top: 130px;
+    left: 34%; */
 }
 
 .form-item{
