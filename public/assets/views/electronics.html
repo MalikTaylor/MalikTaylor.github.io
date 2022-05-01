@@ -160,16 +160,15 @@
                 </div>
                 <div class="project-description align-items-center">
                     <h5 class="project-heading text-center">3D Printed Arm</h5>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis 
-                        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum 
-                        dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non 
-                        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    <p>
+                        This project was my first take on a fully 3D Printed prosthetic hand.
+                        The thumb is apposable and each of the fingers are fully actuated using servo motors and elastic nylon cord.
+                        Just like prosthetics today, the arm has five pre-programmed hand positions using the Arduino Nano.
+        
                     </p>
                     <!-- CHANGE THIS BACK TO "project-btn-container" -->
                     <div class="project-btn-container-v2">
-                        <button class="project-btn view-btn btn btn-lg">View Project</button>
+                        <!-- <button class="project-btn view-btn btn btn-lg">View Project</button> -->
                         <!-- Could not display '<' character to I used unicode &lt -->
                         <button class="project-btn code-btn btn btn-lg"> &lt/> Code</button> 
                     </div>
@@ -184,7 +183,7 @@
                         <p>The LED Music Visualizer is capable of displaying real-time animations using a strip of programmable LED's. This project uses an Arduino Uno paired with a SparkFun spectrum shield which splits incoming audio signals into seven different frequencies. These frequencies are then processed by the Arduino and are then displayed onto the LED Strip. As of right now the system offers three animations, Single Pulse, Double Pulse, and Snake. I plan on improving this project over the coming months and I will be adding more animations soon.
                         </p>
                         <div class="project-btn-container-v2">
-                            <button class="project-btn view-btn btn btn-lg">View Project</button>
+                            <button class="project-btn view-btn btn btn-lg" onclick="location.href='https://github.com/MalikTaylor/Music-Visualizer-Arduino';">View Project</button>
                             <!-- Could not display '<' character to I used unicode &lt -->
                             <button class="project-btn code-btn btn btn-lg"> &lt/> Code</button> 
                         </div>
@@ -196,23 +195,24 @@
             </div>
 
             <!-- Project  -->
-                <div id="software-work-block" class="row">
+            <div id="software-work-block" class="row">
                     <div class="col-md-6" style="padding: 0px;">
                         <img class="software-project-image" src="/public/assets/images/security-system.jfif">
                     </div>
                 <div class="project-description align-items-center">
                     <h5 class="project-heading text-center">Security System</h5>
-                    <p>This project is a basic security system powered by the Arduino Uno. 
-                        If the user falsely enters in the password more than three times, the security system will enter a lock-down state.
+                    <p>This project is a basic home security system powered by the Arduino Uno. To access the system the user must enter their correct password. 
+                        Once accessed, the user can activate the system's alarm, change their password, or configure the system's settings. When armed, if the deviec detect any motion the alarm will be triggered.
                     </p>
                     <!-- CHANGE THIS BACK TO "project-btn-container" -->
                     <div class="project-btn-container-v2">
-                        <button class="project-btn view-btn btn btn-lg">View Project</button>
+                        <button class="project-btn view-btn btn btn-lg" onclick="location.href='https://github.com/MalikTaylor/Security-System-Arduino';">View Project</button>
                         <!-- Could not display '<' character to I used unicode &lt -->
                         <button class="project-btn code-btn btn btn-lg"> &lt/> Code</button> 
                     </div>
                 </div>
             </div>
+            
 
             <!-- Project  -->
             <div id="software-work-block" class="row">
@@ -222,12 +222,10 @@
                         <p>As a beginner robotics hobbyist, I wanted to find a beginner-friendly project that would use the Arduino microcontroller as the brains of my project. 
                             While browsing the internet I came across the Useless machine which is a device that serves no real purpose. 
                             However, I noticed that all these machines would repeat the same action every time and I wanted to change that, so I set out to build my own that 
-                            cycles through random animations. Below is the schematic for the Useless Machine. If you're interest in the code for this project the sketch 
-                            can be found on my software page here. For further instructions head over to my Git Hub pagehere where I have a list of materials for this project 
-                            and more.
+                            cycles through random animations. 
                         </p>
                         <div class="project-btn-container-v2">
-                            <button class="project-btn view-btn btn btn-lg">View Project</button>
+                            <button class="project-btn view-btn btn btn-lg" onclick="location.href='https://github.com/MalikTaylor/Useless-Machine-Ardunio';">View Project</button>
                             <!-- Could not display '<' character to I used unicode &lt -->
                             <button class="project-btn code-btn btn btn-lg"> &lt/> Code</button> 
                         </div>
