@@ -47,6 +47,11 @@ a, a:hover, a:focus, a:active{
     z-index: 3;
 }
 
+.navbar-collapse{
+    position: relative; 
+    justify-content: end;
+}
+
 #nav-icon{
     height: 80px;
     margin-bottom: 10px;
