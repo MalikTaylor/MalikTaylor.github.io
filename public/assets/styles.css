@@ -1,6 +1,8 @@
+
+
 html{
     scroll-behavior: smooth !important;
-    overflow-x: hiddengit ;
+    overflow-x: hidden;
 }
 
 .nav-anchor-offset{
