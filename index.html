@@ -14,7 +14,7 @@
         <title>Malik Taylor</title>
     </head>
     <body>
-        <nav class="navbar navbar-expand-lg navbar-dark">
+        <nav class="navbar navbar-expand-lg navbar-dark d-flex align-content-center">
             <a class="navbar-brand" href="#hero-section">
                 <img id="nav-icon" src="/public/assets/images/navbar-icon.png"> 
             </a>
@@ -47,7 +47,7 @@
         <main id="hero-section" class="container-fluid">
             <div id="hero-padding">
                 <div id="hero-content" class="row">
-                    <div class="col-md-8 col-sm-12">
+                    <div class="col-md-12 col-sm-12">
                         <div id="hero-info-container" class="col">
                             <div class="row text-left">
                                 <h3 id="hello-text"class="">Hello I'm</h3>
@@ -69,33 +69,33 @@
                             <a href="https://www.linkedin.com/in/malik-taylor-251409194/" class="fab fa-linkedin"></a>
                         </div>
                     </div>
-                    <div id="img-container" class="col"></div>  <!--Hero Portait Image Div-->
-                    <!-- <div class="nav-anchor-offset" id="about-offset"></div> -->
+                    <!--Hero Portait Image Div-->
+                    <!-- <div id="img-container" class="col"></div>   -->
                 </div>
             </div>
         </main>
 
-        <section id="about-section">
+        <section id="about-section" class="">
             <div class="nav-anchor-offset" id="about-offset"></div>
-            <div id="about-content" class="container">
-                <div class="row" >
-                    <h1 class="section-header text-center">About Me</h1>
-                    <div class="col-md-4">
+            <div id="about-content">
+                <div class="row justify-content-center">
+                    <h1 id="about-header" class="section-header text-center">About Me</h1>
+                    <div id="abt-me-img-container" class="col-lg-4 col-md-4 d-flex justify-content-center">
                         <div id="abt-img-container">
-                            <img id="abt-me-img" src="/public/assets/images/abt-me.jpg" alt="Picture of me">
+                            <img id="abt-me-img" src="/public/assets/images/headshot.jpg" alt="Picture of me">
                             <div id="education" class="text-center">
                                 <div id="degree">B.S. Computer Science</div>
                                 <div id="university">University of Houston</div>
                             </div>
                         </div>
                     </div>
-                    <div class="col" style="font-size: 22px; ">
-                        <h3 style="font-size: 30px">Hey there, thanks for stopping by!</h3>
-                        <p>I'm Malik, a programmer based in Houston, TX. I am currently a student at the University of Houston pursuing a degree in Computer Science and Computer Engineering.</p> 
-                        <p>My interest in technology stems from its ability to be used as more than just entertainment, but rather a tool that can improve human well-being. I intend to apply my knowledge in computer science and microelectronics to unique fields such as education, healthcare, and space exploration, and to push the boundaries of what is currently possible</p>
-                        <div id="recent-container">
-                            <p>Here are some technologies I've been working with recently:</p>
-                            <div class="recent-grid row ">
+                    <div class="col-lg-8 col-md-8 col-sm-10">
+                        <h3 id="about-subhead">Hey there, thanks for stopping by!</h3>
+                        <p class="about-text">I'm Malik, a programmer based in Houston, TX. I am currently a student at the University of Houston pursuing a degree in Computer Science and Computer Engineering.</p> 
+                        <p class="about-text">My interest in technology stems from its ability to be used as more than just entertainment, but rather a tool that can improve human well-being. I intend to apply my knowledge in computer science and microelectronics to unique fields such as education, healthcare, and space exploration, and to push the boundaries of what is currently possible</p>
+                        <div id="recent-container"> 
+                            <p class="about-text">Here are some technologies I've been working with recently:</p>
+                            <div id="recent-grid" class="row">
                                 <div class="row">
                                     <div class="recent-tech col-md-1" >
                                         <button class="recent-tech-item btn" style="background-color: #d90429;">PHP</button>
@@ -119,11 +119,11 @@
             </div>
         </section>
 
-        <section id="project-section">
+        <!-- <section id="project-section">
             <div class="nav-anchor-offset" id="project-offset"></div>
             <div class="container">
                 <h1 class="section-header text-center" style="padding-bottom: 20px">Projects</h1>
-                <!-- <div id="project-nav-container" class="row text-center" style="justify-content: center;"> 
+                <div id="project-nav-container" class="row text-center" style="justify-content: center;"> 
                     <a class="col-md-1 project-nav-link" href="#project-section"> ALL </a>
                     <div class="col-md-1 project-nav-bullet">/</div>
                     <a class="col-md-1 project-nav-link" href="#"> SOFTWARE </a>
@@ -133,7 +133,7 @@
                     <a class="col-md-1 project-nav-link" href="#"> GAMES </a>
                     <div class="col-md-1 project-nav-bullet">/</div>
                     <a class="col-md-1 project-nav-link" href="#"> UPCOMING </a>
-                </div> -->
+                </div>
                 <div style="margin-top: 30px;">
                     <div id="project-grid" class="row">
                         <a href="./public/assets/views/software.html" class="col-md-3 text-center work-container">
@@ -167,14 +167,14 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
 
         <section id="skills-section">
             <div class="nav-anchor-offset" id="skills-offset"></div>
-            <div class="container">
+            <div id="skills-content" class="container">
                 <h1 class="section-header text-center">Skills</h1>
-                <div id="work-experience-grid" class="row text-center">
-                    <div id="work-position-wrap" class="col-md-4">
+                <div id="work-experience-grid" class="row text-center justify-content-center">
+                    <div id="software-skills" class="work-position-wrap col-lg-4 col-md-6 col-sm-6">
                         <h3 class="skill-heading">
                             <strong>Software</strong>
                         </h3>
@@ -204,7 +204,7 @@
                         </div>
                     </div>
                     <!-- Tools -->
-                    <div class="col-md-4">
+                    <div class="work-position-wrap col-lg-4 col-md-6 col-sm-6">
                         <h3 class="skill-heading">
                             <strong>Tools</strong>
                         </h3>
@@ -234,7 +234,7 @@
                         </div>
                     </div>
                     <!-- Electronics -->
-                    <div id="electronics-div" class="col-md-4">
+                    <div id="electronics-div" class="work-position-wrap col-lg-4 col-md-6 col-sm-6">
                         <h3 class="skill-heading">
                             <strong>Electronics</strong>
                         </h3>
@@ -249,15 +249,14 @@
                         <div class="skill-div row d-flex justify-content-center">
                             <div class="skill-text col-md-5">
                                 <button class="skill-btn btn">Soldering</button>
-                            </div>
-                            
+                            </div> 
                         </div>
                     </div>
                 </div>
                 <br>
                 <div style="position: relative; margin-top: 5%; left: 15%;">
                     <div class="row text-center">
-                        <div id="robotics-div" class="col-md-4">
+                        <div id="robotics-div" class="work-position-wrap col-lg-4 col-md-6 col-sm-6">
                             <h3 class="skill-heading">
                                 <strong>Robotics</strong>
                             </h3>
@@ -273,7 +272,7 @@
                         </div>
 
                         <!-- Game Development -->
-                        <div id="game-dev" class="col-md-4">
+                        <div id="game-dev" class="work-position-wrap col-lg-4 col-md-6 col-sm-6">
                             <h3 class="skill-heading">
                                 <strong>Game Development</strong>
                             </h3>
@@ -287,13 +286,12 @@
                             </div>
                         </div>
 
-                    
                     </div>
-                </div>
+                </div> 
             </div>
         </section>
 
-        <section id="contact-section" class="row">
+        <!-- <section id="contact-section" class="row">
             <div class="nav-anchor-offset" id="contact-offset"></div>
             <div id="form-img" class="d-flex justify-content-center align-self-center" >
                 <img src="/public/assets/images/contact-form-img.png">
@@ -334,7 +332,7 @@
                     </div>
                 </form>
             </div>
-        </section>
+        </section> -->
 
         <footer>
             <div id="footer-select">

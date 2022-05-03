@@ -1,4 +1,7 @@
-
+body{
+    overflow-x: hidden !important;
+    background-color: #fafafa;
+}
 
 html{
     scroll-behavior: smooth !important;
@@ -42,9 +45,9 @@ a, a:hover, a:focus, a:active{
 .navbar{
     position: fixed; 
     color: white !important; 
-    min-height: 75px; 
-    width: 100%;  
-    padding: 0px 30px 0px 75px;
+    max-height: 8%;
+    width: 100vw;  
+    padding: 0px 30px 0px 4.5%;
     background-color: #2b2d42 !important;
     z-index: 3;
 }
@@ -64,7 +67,7 @@ a, a:hover, a:focus, a:active{
 }
 
 .nav-link{
-    font-size: 18px;
+    font-size: 1.1rem;
     font-weight: bold;
     color: rgba(255, 255, 255, 1) !important;
 }
@@ -83,9 +86,11 @@ a, a:hover, a:focus, a:active{
     background-repeat: no-repeat;
     box-shadow: 0px -5px 10px 2px black;
 }
+
 #hero-padding{
-    margin: 0px 200px 0px 200px;
+    margin: 0px 10% 0px 10%;
 }
+
 #hero-content{
     height: 100vh;
 }
@@ -94,6 +99,7 @@ a, a:hover, a:focus, a:active{
     position: relative;
     top: 33%;
 }
+
 #hello-text{
     color: #d90429;
     font-size: 30px;
@@ -101,8 +107,9 @@ a, a:hover, a:focus, a:active{
     margin-left: -3px;
     margin-bottom: 0px;
 }
+
 #signature{
-    font-size: 90px !important;
+    font-size: 6rem !important;
     font-weight: bold;
     padding: 5px;
     margin-top: -10px;
@@ -129,7 +136,7 @@ a, a:hover, a:focus, a:active{
     background-color: #d90429 !important;
     box-shadow: -4px 11px 20px #a6031d !important;
     transition: transform 200ms linear;
-    font-size: 16px !important;
+    font-size: 1rem !important;
 }
 
 .hero-btn-link{
@@ -143,8 +150,8 @@ a, a:hover, a:focus, a:active{
 }
 
 #social-container{
-    position: absolute;
-    bottom: 100px;
+    position: relative;
+    top: 55%;
     margin-left: -6px;
 }
 
@@ -162,7 +169,41 @@ a, a:hover, a:focus, a:active{
     transition: transform 500ms ease-in-out 25ms ;
 }
 
+#abt-me-img-container{
+    max-height: 360px !important;
+    margin-bottom: 30px;
+}
+
+
+@media (max-width: 1000px){
+    #about-content{
+        margin: 20px;
+    }
+
+    #abt-me-img, #abt-img-container{
+        width: 200px !important;
+    }
+
+    #about-subhead{
+        font-size: 25px !important;
+    }
+
+    .about-text{
+        font-size: 16px !important;
+    }
+
+    #abt-me-img-container{
+        max-height: 257px !important;
+        margin-bottom: 30px;
+    }
+}
+
+
 @media (max-width: 900px) {
+    #about-section{
+        margin: 10px !important;
+    }
+
     #signature{
         font-size: 65px !important;
     }
@@ -173,6 +214,19 @@ a, a:hover, a:focus, a:active{
         width: auto !important;
         font-size: medium;  
     }
+    
+    
+}
+
+@media (max-width: 767px) {
+    /* #abt-me-img-container{
+        display: none;
+    } */
+
+    #about-header{
+        padding: 20px;
+    }
+
 }
 
 @media (max-width: 580px) {
@@ -182,21 +236,43 @@ a, a:hover, a:focus, a:active{
     .hero-btn{
         width: 100px; 
         font-size: small;  
-    }
-    
+    }  
 }
 
 @media (min-width: 420px) {
     #signature{
        font-size: 55px;
     }
+
     #sub-head{
         font-size: 16px;
     }
+
     .hero-btn{
         font-size: small;
+    }   
+}
+
+@media (max-width: 480px) {
+    #signature{
+       font-size: 3.35rem !important;
     }
-    
+    #sub-head{
+        font-size: 1.5rem !important;
+    }
+    .hero-btn{
+        margin-right: 15px;
+    }
+
+    #about-subhead{
+        text-align: center;
+        font-size: 23px !important;
+    }
+
+    .recent-tech-item, .skill-btn{
+        width: 100px !important;
+        font-size: small;
+    }
 }
 
 @media (max-width: 420px) {
@@ -217,18 +293,44 @@ a, a:hover, a:focus, a:active{
         padding: 0px !important;
         font-size: small !important;
     }
-    
+
+    /* #abt-me-img, #abt-img-container{
+        width: 100px !important;
+    } */
+
+    #about-section, #about-content, #skills-section{
+        height: auto !important;
+    }
+
+    #about-subhead{
+        text-align: center;
+        font-size: 20px !important;
+    }
+
+    #degree, #university{
+        font-size: 12px !important;
+    }
+
+    .about-text{
+        font-size: 13px !important;
+    }
+
+    .work-position-wrap{
+        max-width: 185px;
+    }
+
 }
 
 /* About Section */
 
 #about-section{
     height: 100vh;
-    background-color: #fafafa;
+    margin: 0px 10% 0px 10%;
 }
 #about-content{
     height: 100vh;
 }
+
 #abt-img-container{
     width: 300px;
     position: relative;
@@ -237,12 +339,21 @@ a, a:hover, a:focus, a:active{
     border: black solid 1px;
     box-shadow: -15px 15px 0px black;
 }
+
 #abt-me-img{
     width: 300px;
     padding: 10px;
 }
 
-.recent-grid{
+#about-subhead{
+    font-size: 30px;
+}
+
+.about-text{
+    font-size: 1.4rem;
+}
+
+#recent-grid{
     width: 100%;
     position: relative;
     left: 15%;
@@ -267,7 +378,6 @@ a, a:hover, a:focus, a:active{
 
 #degree{
     font-size: 16px;
- 
 }
 
 #university{
@@ -396,7 +506,7 @@ a, a:hover, a:focus, a:active{
 }
 
 .skill-btn{
-    min-width: 150px;
+    width: 150px;
     margin: 8px 8px 8px 8px !important;
     padding: 10px 0px 10px 0px;
     background-color: #d90429;
