@@ -1,13 +1,11 @@
 body{
     overflow-x: hidden !important;
     background-color: #fafafa;
-    background-repeat: no-repeat;
 }
 
 html{
     scroll-behavior: smooth !important;
     overflow-x: hidden;
-    background-repeat: no-repeat;
 }
 
 
@@ -245,6 +243,7 @@ a, a:hover, a:focus, a:active{
 #project-section{
     height: 100vh;
     background-image: url(/public/assets/images/project-background.png);
+    background-repeat: no-repeat;
 }
 
 .project-nav-container{
@@ -354,6 +353,7 @@ a, a:hover, a:focus, a:active{
 #skills-section{
     height: 100vh;
     background-image: url(/public/assets/images/skills-background.png);
+    background-repeat: no-repeat;
 }
 
 .skill-heading{
@@ -490,16 +490,7 @@ footer{
         width: auto !important;
         font-size: medium;  
     }
-}
 
-@media (max-width: 767px), (max-height: 800px) {
-    /* #abt-me-img-container{
-        display: none !important;
-    } */
-
-    .section-header{
-        padding: 20px;
-    }
 
     #about-section, #about-content, #project-section, #skills-section, #contact-section{
         height: fit-content;
@@ -511,6 +502,17 @@ footer{
 
     #form-img{
         display: none !important;
+    }
+    
+}
+
+@media (max-width: 767px), (max-height: 800px) {
+    /* #abt-me-img-container{
+        display: none !important;
+    } */
+
+    .section-header{
+        padding: 20px;
     }
 }
 
