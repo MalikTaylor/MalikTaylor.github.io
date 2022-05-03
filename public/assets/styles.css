@@ -302,9 +302,13 @@ a, a:hover, a:focus, a:active{
     } */
 
     /* #about-section, #about-content,  */
-    #skills-section{
+    #about-section, #about-content, #skills-section, #project-section, #contact-section{
         height: auto !important;
     }
+
+    /* #project-grid{
+        
+    } */
 
     #about-subhead{
         text-align: center;
@@ -321,6 +325,10 @@ a, a:hover, a:focus, a:active{
 
     .work-position-wrap{
         max-width: 185px;
+    }
+
+    #form-img{
+        display: none !important;
     }
 
     .footer-link{
