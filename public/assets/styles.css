@@ -53,11 +53,8 @@ a, a:hover, a:focus, a:active{
 }
 
 .navbar-collapse{
-    position: absolute; 
-    right: 0px;
-    top: 68px;
-    width: 100vw;
-    background-color: #2f3046;
+    position: relative; 
+    justify-content: end;
 }
 
 #nav-icon{
@@ -175,167 +172,6 @@ a, a:hover, a:focus, a:active{
 #abt-me-img-container{
     max-height: 360px !important;
     margin-bottom: 30px;
-}
-
-
-@media (max-width: 1000px){
-    #about-content{
-        margin: 20px;
-    }
-
-    #abt-me-img, #abt-img-container{
-        width: 200px !important;
-    }
-
-    #about-subhead{
-        font-size: 25px !important;
-    }
-
-    .about-text{
-        font-size: 16px !important;
-    }
-
-    #abt-me-img-container{
-        max-height: 257px !important;
-        margin-bottom: 30px;
-    }
-}
-
-
-@media (max-width: 900px) {
-    #about-section{
-        margin: 10px !important;
-    }
-
-    #signature{
-        font-size: 65px !important;
-    }
-    #sub-head{
-        font-size: 20px;
-    }
-    .hero-btn{
-        width: auto !important;
-        font-size: medium;  
-    }
-    
-    
-}
-
-@media (max-width: 767px) {
-    /* #abt-me-img-container{
-        display: none;
-    } */
-
-    #about-header{
-        padding: 20px;
-    }
-
-}
-
-@media (max-width: 580px) {
-    #hero-padding{
-        margin: 0px 50px 0px 50px;
-    }
-    .hero-btn{
-        width: 100px; 
-        font-size: small;  
-    }  
-}
-
-@media (min-width: 420px) {
-    #signature{
-       font-size: 55px;
-    }
-
-    #sub-head{
-        font-size: 16px;
-    }
-
-    .hero-btn{
-        font-size: small;
-    }   
-}
-
-@media (max-width: 480px) {
-    #signature{
-       font-size: 3.35rem !important;
-    }
-    #sub-head{
-        font-size: 1.5rem !important;
-    }
-    .hero-btn{
-        margin-right: 15px;
-    }
-
-    #about-subhead{
-        text-align: center;
-        font-size: 23px !important;
-    }
-
-    .recent-tech-item, .skill-btn{
-        width: 100px !important;
-        font-size: small;
-    }
-}
-
-@media (max-width: 420px) {
-    #hero-padding{
-        margin: 0px 1vw 0px 1vw;
-    }
-    #hello-text{
-        font-size: 25px;
-    }
-    #signature{
-       font-size: 50px !important;
-    }
-    #sub-head{
-        font-size: 16px !important;
-    }
-    .hero-btn{
-        width: 100px !important;
-        padding: 0px !important;
-        font-size: small !important;
-    }
-
-    /* #abt-me-img, #abt-img-container{
-        width: 100px !important;
-    } */
-
-    /* #about-section, #about-content,  */
-    #about-section, #about-content, #skills-section, #project-section, #contact-section{
-        height: auto !important;
-    }
-
-    /* #project-grid{
-        
-    } */
-
-    #about-subhead{
-        text-align: center;
-        font-size: 20px !important;
-    }
-
-    #degree, #university{
-        font-size: 12px !important;
-    }
-
-    .about-text{
-        font-size: 13px !important;
-    }
-
-    .work-position-wrap{
-        max-width: 185px;
-    }
-
-    #form-img{
-        display: none !important;
-    }
-
-    .footer-link{
-        font-size: 13px !important;
-        margin: 8px !important;
-    }
-
 }
 
 /* About Section */
@@ -545,6 +381,10 @@ a, a:hover, a:focus, a:active{
     border-radius: 5px;
 }
 
+#contact-header{
+    color: white !important;
+}
+
 #contact-text{
     text-align: center;
     font-size: 20px;
@@ -596,3 +436,170 @@ footer{
 .footer-link:hover{
     text-decoration: underline;
 }
+
+@media (max-width: 1000px){
+
+    #about-content{
+        margin: 20px;
+    }
+
+    #abt-me-img, #abt-img-container{
+        width: 200px !important;
+    }
+
+    #about-subhead{
+        font-size: 25px !important;
+    }
+
+    .about-text{
+        font-size: 16px !important;
+    }
+
+    #abt-me-img-container{
+        max-height: 257px !important;
+        margin-bottom: 30px;
+    }
+}
+
+@media(max-width: 991px){
+    .navbar-collapse{
+        position: absolute; 
+        right: 0px;
+        top: 68px;
+        width: 100vw;
+        background-color: #2f3046;
+    }
+}
+
+@media (max-width: 900px) {
+
+    #about-section{
+        margin: 10px !important;
+    }
+
+    #signature{
+        font-size: 65px !important;
+    }
+    #sub-head{
+        font-size: 20px;
+    }
+    .hero-btn{
+        width: auto !important;
+        font-size: medium;  
+    }
+}
+
+@media (max-width: 767px) {
+    /* #abt-me-img-container{
+        display: none;
+    } */
+
+    .section-header{
+        padding: 20px;
+    }
+
+}
+
+@media (max-width: 580px) {
+    #hero-padding{
+        margin: 0px 50px 0px 50px;
+    }
+    .hero-btn{
+        width: 100px; 
+        font-size: small;  
+    }  
+}
+
+@media (min-width: 420px) {
+    #signature{
+       font-size: 55px;
+    }
+
+    #sub-head{
+        font-size: 16px;
+    }
+
+    .hero-btn{
+        font-size: small;
+    }   
+}
+
+@media (max-width: 480px) {
+    #signature{
+       font-size: 3.35rem !important;
+    }
+    #sub-head{
+        font-size: 1.5rem !important;
+    }
+    .hero-btn{
+        margin-right: 15px;
+    }
+
+    #about-subhead{
+        text-align: center;
+        font-size: 23px !important;
+    }
+
+    .recent-tech-item, .skill-btn{
+        width: 100px !important;
+        font-size: small;
+    }
+}
+
+@media (max-width: 420px) {
+    #hero-padding{
+        margin: 0px 1vw 0px 1vw;
+    }
+    #hello-text{
+        font-size: 25px;
+    }
+    #signature{
+       font-size: 50px !important;
+    }
+    #sub-head{
+        font-size: 16px !important;
+    }
+    .hero-btn{
+        width: 100px !important;
+        padding: 0px !important;
+        font-size: small !important;
+    }
+
+    /* #abt-me-img, #abt-img-container{
+        width: 100px !important;
+    } */
+    #about-section, #about-content, #skills-section, #project-section, #contact-section{
+        height: auto;
+    }
+
+    #about-subhead{
+        text-align: center;
+        font-size: 20px !important;
+    }
+
+    #degree, #university{
+        font-size: 12px !important;
+    }
+
+    .about-text{
+        font-size: 13px !important;
+    }
+
+    .work-position-wrap{
+        max-width: 185px;
+    }
+
+    #form-img{
+        display: none !important;
+    }
+
+    #contact-header{
+        color: #2f3046 !important;
+    }
+
+    .footer-link{
+        font-size: 13px;
+        margin: 8px;
+    }
+}
+
