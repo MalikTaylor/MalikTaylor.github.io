@@ -474,7 +474,7 @@ footer{
     }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 900px), (max-height: 800px){
 
     #about-section{
         margin: 10px !important;
@@ -506,7 +506,7 @@ footer{
     
 }
 
-@media (max-width: 767px), (max-height: 800px) {
+@media (max-width: 767px) {
     /* #abt-me-img-container{
         display: none !important;
     } */
