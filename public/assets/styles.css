@@ -1,12 +1,13 @@
 body{
     overflow-x: hidden !important;
     background-color: #fafafa;
-
+    background-repeat: no-repeat;
 }
 
 html{
     scroll-behavior: smooth !important;
     overflow-x: hidden;
+    background-repeat: no-repeat;
 }
 
 
@@ -499,8 +500,6 @@ footer{
     .section-header{
         padding: 20px;
     }
-
-  
 
     #about-section, #about-content, #project-section, #skills-section, #contact-section{
         height: fit-content;
