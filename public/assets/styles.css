@@ -53,8 +53,11 @@ a, a:hover, a:focus, a:active{
 }
 
 .navbar-collapse{
-    position: relative; 
-    justify-content: end;
+    position: absolute; 
+    right: 0px;
+    top: 68px;
+    width: 100vw;
+    background-color: #2f3046;
 }
 
 #nav-icon{
@@ -298,7 +301,8 @@ a, a:hover, a:focus, a:active{
         width: 100px !important;
     } */
 
-    #about-section, #about-content, #skills-section{
+    /* #about-section, #about-content,  */
+    #skills-section{
         height: auto !important;
     }
 
@@ -317,6 +321,11 @@ a, a:hover, a:focus, a:active{
 
     .work-position-wrap{
         max-width: 185px;
+    }
+
+    .footer-link{
+        font-size: 13px !important;
+        margin: 8px !important;
     }
 
 }
