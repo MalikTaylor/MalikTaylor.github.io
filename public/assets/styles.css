@@ -1,6 +1,7 @@
 body{
     overflow-x: hidden !important;
     background-color: #fafafa;
+
 }
 
 html{
@@ -8,9 +9,10 @@ html{
     overflow-x: hidden;
 }
 
+
 .nav-anchor-offset{
     position: relative;
-    top: -75px;
+    top: -70px;
 }
 
 a, a:hover, a:focus, a:active{
@@ -489,15 +491,26 @@ footer{
     }
 }
 
-@media (max-width: 767px) {
+@media screen and (max-width: 767px) and (max-height: 700px) {
     /* #abt-me-img-container{
-        display: none;
+        display: none !important;
     } */
 
     .section-header{
         padding: 20px;
     }
 
+    #about-section, #about-content, #skills-section, #project-section, #contact-section{
+        height: auto;
+    }
+
+    #contact-header{
+        color: #2f3046 !important;
+    }
+
+    #form-img{
+        display: none !important;
+    }
 }
 
 @media (max-width: 580px) {
@@ -568,9 +581,9 @@ footer{
     /* #abt-me-img, #abt-img-container{
         width: 100px !important;
     } */
-    #about-section, #about-content, #skills-section, #project-section, #contact-section{
+    /* #about-section, #about-content, #skills-section, #project-section, #contact-section{
         height: auto;
-    }
+    } */
 
     #about-subhead{
         text-align: center;
