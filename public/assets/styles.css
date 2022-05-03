@@ -491,7 +491,7 @@ footer{
     }
 }
 
-@media screen and (max-width: 767px) and (max-height: 800px) {
+@media (max-width: 767px), (max-height: 800px) {
     /* #abt-me-img-container{
         display: none !important;
     } */
@@ -500,8 +500,10 @@ footer{
         padding: 20px;
     }
 
-    #about-section, #about-content, #skills-section, #project-section, #contact-section{
-        height: auto;
+  
+
+    #about-section, #about-content, #project-section, #skills-section, #contact-section{
+        height: fit-content;
     }
 
     #contact-header{
@@ -517,6 +519,7 @@ footer{
     #hero-padding{
         margin: 0px 50px 0px 50px;
     }
+
     .hero-btn{
         width: 100px; 
         font-size: small;  
@@ -541,9 +544,11 @@ footer{
     #signature{
        font-size: 3.35rem !important;
     }
+
     #sub-head{
         font-size: 1.5rem !important;
     }
+    
     .hero-btn{
         margin-right: 15px;
     }
