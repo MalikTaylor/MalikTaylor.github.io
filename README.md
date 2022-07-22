@@ -24,6 +24,8 @@
 
 
 <!-- PROJECT LOGO -->
+
+<!--
 <br />
 <div align="center">
   <a href="https://github.com/github_username/repo_name">
@@ -35,13 +37,13 @@
   <p align="center">
     <!-- Personal/Project website hosted on GitHub Pages. -->
     <br />
-    <a href="https://pomo-grow.herokuapp.com/">View Demo</a>
+    <a href="https://maliktaylor.co/">View Demo</a>
     ·
     <a href="https://github.com/github_username/repo_name/issues">Report Bug</a>
   </p>
 </div>
 
-
+-->
 
 <!-- TABLE OF CONTENTS -->
 <details>
