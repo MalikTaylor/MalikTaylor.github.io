@@ -33,7 +33,7 @@
 <h3 align="center">Personal Portfolio</h3>
 
   <p align="center">
-    Personal/Project website hosted on Heroku.
+    Personal/Project website hosted on GitHub Pages.
     <br />
     <a href="https://maliktaylor.co/">View Site</a>
     ·
