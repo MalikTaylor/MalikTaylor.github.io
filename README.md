@@ -24,26 +24,24 @@
 
 
 <!-- PROJECT LOGO -->
+<br />
+<div align="center">
+  <a href="https://github.com/github_username/repo_name">
+    <img src="/public/assets/images/navbar-icon.png" alt="Logo" width="100" height="100">
+  </a>
 
-<!--
-  <br />
-  <div align="center">
-    <a href="https://github.com/github_username/repo_name">
-      <img src="/public/assets/images/sprout-img.png" alt="Logo" width="80" height="100">
-    </a>
+<h3 align="center">Personal Portfolio</h3>
 
-  <h3 align="center">Personal Portfolio</h3>
+  <p align="center">
+    Personal/Project website hosted on Heroku.
+    <br />
+    <a href="https://maliktaylor.co/">View Site</a>
+    ·
+    <a href="https://github.com/github_username/repo_name/issues">Report Bug</a>
+  </p>
+</div>
 
-    <p align="center">
-      Personal/Project website hosted on GitHub Pages.
-      <br />
-      <a href="https://maliktaylor.co/">View Demo</a>
-      ·
-      <a href="https://github.com/github_username/repo_name/issues">Report Bug</a>
-    </p>
-  </div>
 
--->
 
 <!-- TABLE OF CONTENTS -->
 <details>
