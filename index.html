@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
     <html lang="en">
     <head>
         <meta charset="UTF-8">
@@ -7,12 +6,14 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name='viewport' content='initial-scale=1, viewport-fit=cover'>
         <meta name="theme-color" content="#2b2d42">
+        <link rel="icon" type="image/png" href="./public/assets/images/web-icon-img.png">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
         <!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-VHZX1QVZVC"></script>
+        <script src="https://kit.fontawesome.com/07fb3b026d.js" crossorigin="anonymous"></script>
         <script>
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
@@ -20,7 +21,7 @@
 
           gtag('config', 'G-VHZX1QVZVC');
         </script>
-        
+        <script src="./filter.js" defer></script>
         <link href="/public/assets/styles.css" rel="stylesheet">
         <title>Malik Taylor</title>
     </head>
@@ -35,21 +36,22 @@
             </button>
         
             <div class="navbar-collapse collapse text-center" id="navbarSupportedContent">
+                
                 <ul class="navbar-nav">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#hero-section">Home</a>
+                        <a class="nav-btn" href="#hero-section">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#about-offset">About</a>
+                        <a class="nav-btn" href="#about-offset">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#project-offset">Projects</a>
+                        <a class="nav-btn" href="#project-offset">Projects</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#skills-offset">Skills</a>
+                        <a class="nav-btn" href="#skills-offset">Skills</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#contact-offset">Contact</a>
+                        <a class="nav-btn" href="#contact-offset">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -71,13 +73,13 @@
                                 <button class="hero-btn btn">
                                     <a class="hero-btn-link" href="#about-offset">About Me</a>
                                 </button>    
-                                <button class="hero-btn btn"><a href="./public/assets/Malik Taylor's Resume.pdf" download="Malik Taylor's Resume">Resume</button>
+                                <button class="hero-btn btn"><a href="./public/assets/Malik Taylor's Resume.pdf" download="Malik Taylor's Resume"></a>Resume</button>
                             </div>
                         </div>
                         <div id="social-container">
-                            <a href="https://www.youtube.com/channel/UCZMicsoHBOJebbyCS7dWkTg?" class="fab fa-youtube"></a>
-                            <a href="https://www.instagram.com/__maliktaylor/" class="fab fa-instagram"></a>
-                            <a href="https://www.linkedin.com/in/malik-taylor-251409194/" class="fab fa-linkedin"></a>
+                            <a href="https://www.youtube.com/channel/UCZMicsoHBOJebbyCS7dWkTg?" class="fab fa-youtube social-icon-red"></a>
+                            <a href="https://www.instagram.com/__maliktaylor/" class="fab fa-instagram social-icon-red"></a>
+                            <a href="https://www.linkedin.com/in/malik-taylor-251409194/" class="fab fa-linkedin social-icon-red"></a>
                         </div>
                     </div>
                     <!--Hero Portait Image Div-->
@@ -86,7 +88,7 @@
             </div>
         </main>
 
-        <section id="about-section" class="">
+        <section id="about-section">
             <div class="nav-anchor-offset" id="about-offset"></div>
             <div id="about-content">
                 <div class="row justify-content-center">
@@ -100,7 +102,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-8 col-md-8 col-sm-10">
+                    <div class="col-lg-8 col-md-8 col-sm-10" style="max-width: 700px;">
                         <h3 id="about-subhead">Hey there, thanks for stopping by!</h3>
                         <p class="about-text">I'm Malik, a programmer based in Houston, TX. I am currently a student at the University of Houston pursuing a degree in Computer Science and Computer Engineering.</p> 
                         <p class="about-text">My interest in technology stems from its ability to be used as more than just entertainment, but rather a tool that can improve human well-being. I intend to apply my knowledge in computer science and microelectronics to unique fields such as education, healthcare, and space exploration, and to push the boundaries of what is currently possible</p>
@@ -108,18 +110,18 @@
                             <p class="about-text">Here are some technologies I've been working with recently:</p>
                             <div id="recent-grid" class="row">
                                 <div class="row">
-                                    <div class="recent-tech col-md-1" >
+                                    <div class="recent-tech-col col-md-1" >
                                         <button class="recent-tech-item btn" style="background-color: #d90429;">PHP</button>
                                     </div>   
-                                    <div class="recent-tech col-md-1">
+                                    <div class="recent-tech-col col-md-1">
                                         <button class="recent-tech-item btn" style="background-color: #d90429;">C++</button>
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <div class="recent-tech col-md-1">
+                                    <div class="recent-tech-col col-md-1">
                                         <button class="recent-tech-item btn" style="background-color: #d90429;">Javascript</button>
                                     </div>   
-                                    <div class="recent-tech col-md-1">
+                                    <div class="recent-tech-col col-md-1">
                                         <button class="recent-tech-item btn" style="background-color: #d90429;">HTML/CSS</button>
                                     </div>
                                 </div>
@@ -132,49 +134,245 @@
 
         <section id="project-section">
             <div class="nav-anchor-offset" id="project-offset"></div>
-            <div class="container">
+            <div id="project-content" class="container">
                 <h1 class="section-header text-center" style="padding-bottom: 20px">Projects</h1>
-                <!-- <div id="project-nav-container" class="row text-center" style="justify-content: center;"> 
-                    <a class="col-md-1 project-nav-link" href="#project-section"> ALL </a>
-                    <div class="col-md-1 project-nav-bullet">/</div>
-                    <a class="col-md-1 project-nav-link" href="#"> SOFTWARE </a>
-                    <div class="col-md-1 project-nav-bullet">/</div>
-                    <a class="col-md-1 project-nav-link" href="#"> ELECTRONICS </a>
-                    <div class="col-md-1 project-nav-bullet">/</div>
-                    <a class="col-md-1 project-nav-link" href="#"> GAMES </a>
-                    <div class="col-md-1 project-nav-bullet">/</div>
-                    <a class="col-md-1 project-nav-link" href="#"> UPCOMING </a>
-                </div> -->
-                <div style="margin-top: 30px;">
-                    <div id="project-grid" class="row">
-                        <a href="./public/assets/views/software.html" class="col-lg-3 col-md-5  text-center work-container">
-                            <div>
-                                <img src="/public/assets/images/stock-software-img.jpg" class="work-img" alt="stock-software-img">
+                <div id="project-nav-container" class="row d-flex text-center" style="justify-content: center;"> 
+                    <button class="btn project-nav-btn active" onclick="filterSelection('all')"> All</button>
+                    <button class="btn project-nav-btn" onclick="filterSelection('software')"> Software</button>
+                    <button class="btn project-nav-btn" onclick="filterSelection('electronics')"> Electronics</button>
+                    <!-- <button class="btn project-nav-btn" onclick="filterSelection('games')"> Games</button> -->
+                    <button class="btn project-nav-btn" onclick="filterSelection('upcoming')"> Upcoming</button>
+                </div>
+                <div class="container">
+                    <div class="row project-work-block upcoming d-flex justify-content-center">
+                        <div class="col-md-4 project-decription-content-lft text-start">
+                            <p class="project-type">Upcoming Project</p>
+                            <h3 class="project-heading"><a href="#" rel="noreferrer" target="_blank">Autonomous Rover</a></h3>
+                            <div class="project-description-lft d-flex">
+                                <p>
+                                    Currently I'm designing and working on a 3D printed Rover. The goal for project is to have the rover navigate autonomously using Nvidia's Jetson Nano computer running the Robotic Operating System known as ROS.
+                                </p>
                             </div>
-                            <div class="work-div-heading">Software</div>
-                        </a>
-                
-                        <a href="./public/assets/views/electronics.html" class="col-lg-6 col-md-6 text-center work-container">
-                            <div>
-                                <img src="/public/assets/images/stock-arduino-img.png" class="work-img" alt="stock-arduino-img">
+                            <div class="project-resources-lft">
+                                <ul class="project-tech-list d-flex">
+                                    <li class="project-tech-item">3D Printing</li>
+                                    <li class="project-tech-item">Fusion 360</li>
+                                    <li class="project-tech-item">C++</li>
+                                    <li class="project-tech-item">ROS</li>
+                                </ul>
+                                <div class="project-links d-flex">
+                                    <a href="#" aria-label="GitHub Link" rel="noreferrer" target="_blank"> 
+                                        <i class="fa-brands fa-square-github project-link-icon"></i>
+                                    </a>
+                                    <a href="#" aria-label="External Link" rel="noreferrer" target="_blank">
+                                        <i class="fa-solid fa-arrow-up-right-from-square project-link-icon"></i>
+                                    </a>                    
+                                </div>
                             </div>
-                            <div class="work-div-heading">Electronics</div>
-                        </a>
+                        </div>
+                        <div class="col-md-4" style="padding: 0px;">
+                            <img class="project-image" src="/public/assets/images/rover-img.png" alt="Rover Design Image">
+                        </div>
+                    </div>
 
-                        <a href="#" class="col-lg-6 col-md-6 text-center work-container">
-                            <div>
-                                <img src="/public/assets/images/gamedev-img.png" class="work-img" alt="stock-arduino-img">
+                    <div class="row project-work-block upcoming d-flex justify-content-center">
+                        <div class="col-md-4" style="padding: 0px;">
+                            <img class="project-image" src="/public/assets/images/helix-medical-thumbnail-img.PNG" alt="Pomo-Grow Image">
+                        </div>
+                        <div class="col-md-4 project-decription-content">
+                            <p class="project-type">Upcoming Project</p>
+                            <h3 class="project-heading"><a href="#" rel="noreferrer" target="_blank">Helix Medical Clinic Web Portal</a></h3>
+                            <div class="project-description d-flex">
+                                <p>
+                                    A fullstack medical database group project for our database systems class. This project features a web portal for a health provider company that allows patients to schedule and cancel appointments with doctors. The database keeps track of patient information as well as information about the Medical clinic itself.
+                                </p>
                             </div>
-                            <div class="work-div-heading">Game Development</div>
-                        </a>
-
-                        <a href="./public/assets/views/upcoming.html" class="col-lg-3 col-md-5 text-center work-container">
-                            <div>
-                                <img src="/public/assets/images/bike-led-img.jpg" class="work-img" alt="stock-software-img">
+                            <div class="project-resources">
+                                <ul class="project-tech-list d-flex">
+                                    <li class="project-tech-item">HTML/CSS</li>
+                                    <li class="project-tech-item">PHP</li>
+                                    <li class="project-tech-item">Javascript</li>
+                                    <li class="project-tech-item">Azure</li>
+                                </ul>
+                                <div class="project-links-rt d-flex">
+                                    <a href="https://github.com/MalikTaylor/medical-clinic-database" aria-label="GitHub Link" rel="noreferrer" target="_blank"> 
+                                        <i class="fa-brands fa-square-github project-link-icon"></i>
+                                    </a>
+                                    <a href="https://helix-medical-clinic.herokuapp.com/" aria-label="External Link" rel="noreferrer" target="_blank">
+                                        <i class="fa-solid fa-arrow-up-right-from-square project-link-icon"></i>
+                                    </a>                    
+                                </div>
                             </div>
-                            <div class="work-div-heading">Upcoming Projects</div>
-                        </a>
+                        </div>
+                    </div>
 
+                    <div class="row project-work-block upcoming d-flex justify-content-center">
+                        <div class="col-md-4 project-decription-content-lft text-start">
+                            <p class="project-type">Upcoming Project</p>
+                            <h3 class="project-heading"><a href="#" rel="noreferrer" target="_blank">To Do List</a></h3>
+                            <div class="project-description-lft d-flex">
+                                <p>
+                                    A fullstack medical database group project for our database systems class. This project features a web portal for a health provider company that allows patients to schedule and cancel appointments with doctors. The database keeps track of patient information as well as information about the Medical clinic itself.
+                                </p>
+                            </div>
+                            <div class="project-resources-lft">
+                                <ul class="project-tech-list d-flex">
+                                    <li class="project-tech-item">HTML/CSS</li>
+                                    <li class="project-tech-item">PHP</li>
+                                    <li class="project-tech-item">Javascript</li>
+                                    <li class="project-tech-item">Azure</li>
+                                </ul>
+                                <div class="project-links d-flex">
+                                    <a href="https://github.com/MalikTaylor/To-Do-WebApp" aria-label="GitHub Link" rel="noreferrer" target="_blank"> 
+                                        <i class="fa-brands fa-square-github project-link-icon"></i>
+                                    </a>
+                                    <a href="https://maliks-todo-list.herokuapp.com/" aria-label="External Link" rel="noreferrer" target="_blank">
+                                        <i class="fa-solid fa-arrow-up-right-from-square project-link-icon"></i>
+                                    </a>                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4" style="padding: 0px;">
+                            <img class="project-image" src="/public/assets/images/todo-thumbnail-img.PNG" alt="Helix Medical Image">
+                        </div>
+                    </div>
+
+                    <div class="row project-work-block software d-flex justify-content-center">
+                        <div class="col-md-4" style="padding: 0px;">
+                            <img class="project-image" src="/public/assets/images/pomo-grow-thumbnail-img.png" alt="Pomo-Grow Image">
+                        </div>
+                        <div class="col-md-4 project-decription-content">
+                            <p class="project-type">Software Project</p>
+                            <h3 class="project-heading"><a href="#"  rel="noreferrer" target="_blank">Pomo-Grow</a></h3>
+                            <div class="project-description d-flex">
+                                <p>
+                                    Pomo-Grow is a pomodoro timer web app that I built to showcase some of my new web development skills. The Pomodoro Technique is a time management method that is used to break work up into timed intervals. I found myself using other pomodoro timers and I thought it would be fun to create my own.
+                                </p>
+                            </div>
+                            <div class="project-resources">
+                                <ul class="project-tech-list d-flex">
+                                    <li class="project-tech-item">Express</li>
+                                    <li class="project-tech-item">Javascript</li>
+                                    <li class="project-tech-item">Heroku</li>
+                                </ul>
+                                <div class="project-links-rt d-flex">
+                                    <a href="https://github.com/MalikTaylor/Pomo-Grow" aria-label="GitHub Link" rel="noreferrer" target="_blank"> 
+                                        <i class="fa-brands fa-square-github project-link-icon"></i>
+                                    </a>
+                                    <a href="https://pomo-grow.herokuapp.com/" aria-label="External Link" rel="noreferrer" target="_blank">
+                                        <i class="fa-solid fa-arrow-up-right-from-square project-link-icon"></i>
+                                    </a>                  
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="row project-work-block electronics d-flex justify-content-center">
+                        <div class="col-md-4" style="padding: 0px;">
+                            <img class="project-image" src="/public/assets/images/robotic-hand.jpg" alt="Robotic Hand Image">
+                        </div>
+                        <div class="col-md-4 project-decription-content">
+                            <p class="project-type">Electronics Project</p>
+                            <h3 class="project-heading"><a href="#"  rel="noreferrer" target="_blank">3D Printed Arm</a></h3>
+                            <div class="project-description d-flex">
+                                <p>
+                                    This project was my first take on a fully 3D Printed prosthetic hand.
+                                    The thumb is apposable and each of the fingers are fully actuated using servo motors and elastic nylon cord.
+                                    Just like prosthetics today, the arm has five pre-programmed hand positions using the Arduino Nano.
+                                </p>
+                            </div>
+                            <div class="project-resources">
+                                <ul class="project-tech-list d-flex">
+                                    <li class="project-tech-item">C++</li>
+                                    <li class="project-tech-item">Arduino</li>
+                                </ul>
+                                <div class="project-links-rt">
+                                    <!-- <a href="#" aria-label="GitHub Link" rel="noreferrer" target="_blank"> 
+                                        <i class="fa-brands fa-square-github project-link-icon"></i>
+                                    </a>                  -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="row project-work-block electronics d-flex justify-content-center">
+                        <div class="col-md-4 project-decription-content-lft text-start">
+                            <p class="project-type">Electronics Project</p>
+                            <h3 class="project-heading"><a href="#" rel="noreferrer" target="_blank">Music Visualizer</a></h3>
+                            <div class="project-description-lft d-flex">
+                                <p>
+                                    The LED Music Visualizer is capable of displaying real-time animations using a strip of programmable LED's. 
+                                    This project uses an Arduino Uno paired with a SparkFun spectrum shield which splits incoming audio signals into seven different frequencies. 
+                                    These frequencies are then processed by the Arduino and are then displayed onto the LED Strip.
+                                </p>
+                            </div>
+                            <div class="project-resources-lft">
+                                <ul class="project-tech-list d-flex">
+                                    <li class="project-tech-item">C++</li>
+                                    <li class="project-tech-item">Arduino</li>
+                                </ul>
+                                <div class="project-links d-flex">
+                                    <a href="https://github.com/MalikTaylor/Music-Visualizer-Arduino" aria-label="GitHub Link" rel="noreferrer" target="_blank"> 
+                                        <i class="fa-brands fa-square-github project-link-icon"></i>
+                                    </a>               
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4" style="padding: 0px;">
+                            <img class="project-image" src="/public/assets/images/music-visualizer.jpg" alt="Music Visualizer Image">
+                        </div>
+                    </div>
+        
+                    <div class="row project-work-block electronics d-flex justify-content-center">
+                        <div class="col-md-4" style="padding: 0px;">
+                            <img class="project-image" src="/public/assets/images/security-system.jpg" alt="Security System Image">
+                        </div>
+                        <div class="col-md-4 project-decription-content">
+                            <p class="project-type">Electronics Project</p>
+                            <h3 class="project-heading"><a href="#" rel="noreferrer" target="_blank">Security System</a></h3>
+                            <div class="project-description d-flex">
+                                <p>
+                                    This project is a basic home security system powered by the Arduino Uno. To access the system the user must enter their correct password. Once accessed, the user can activate the system's alarm, change their password, or configure the system's settings. When armed, if the deviec detect any motion the alarm will be triggered.
+                                </p>
+                            </div>
+                            <div class="project-resources">
+                                <ul class="project-tech-list d-flex">
+                                    <li class="project-tech-item">C++</li>
+                                    <li class="project-tech-item">Arduino</li>
+                                </ul>
+                                <div class="project-links-rt">
+                                    <a href="https://github.com/MalikTaylor/Security-System-Arduino" aria-label="GitHub Link" rel="noreferrer" target="_blank"> 
+                                        <i class="fa-brands fa-square-github project-link-icon"></i>
+                                    </a>               
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="row project-work-block electronics d-flex justify-content-center">
+                        <div class="col-md-4 project-decription-content-lft text-start">
+                            <p class="project-type">Electronics Project</p>
+                            <h3 class="project-heading"><a href="#" rel="noreferrer" target="_blank">Useless Machine</a></h3>
+                            <div class="project-description-lft d-flex">
+                                <p>
+                                    A Useless Machine or sometimes called a Do Nothing Machine powered by the Arduino microcontroller. My take on the Useless features many different animations that the device randomly cycles through.
+                                </p>
+                            </div>
+                            <div class="project-resources-lft">
+                                <ul class="project-tech-list d-flex">
+                                    <li class="project-tech-item">C++</li>
+                                    <li class="project-tech-item">Arduino</li>
+                                </ul>
+                                <div class="project-links d-flex">
+                                    <a href="https://github.com/MalikTaylor/Useless-Machine-Ardunio" aria-label="GitHub Link" rel="noreferrer" target="_blank"> 
+                                        <i class="fa-brands fa-square-github project-link-icon"></i>
+                                    </a>                
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4" style="padding: 0px;">
+                            <img class="project-image" src="/public/assets/images/useless-machine.jpg" alt="Useless Machine Image">
+                        </div>
                     </div>
                 </div>
             </div>
@@ -184,175 +382,188 @@
             <div class="nav-anchor-offset" id="skills-offset"></div>
             <div id="skills-content" class="container">
                 <h1 class="section-header text-center">Skills</h1>
-                <div id="work-experience-grid" class="row text-center justify-content-center">
-                    <div id="software-skills" class="work-position-wrap col-lg-4 col-md-6 col-sm-6">
-                        <h3 class="skill-heading">
+                <div class="row">
+                    <div class="col">
+                        <h3 class="skill-heading" >
                             <strong>Software</strong>
                         </h3>
                         <div class="skill-div row d-flex justify-content-center">
-                            <div class="skill-text col-md-5">
+                            <div class="skill-text col-lg-5 col-md-5 col-sm-6 d-flex justify-content-center">
                                 <button class="skill-btn btn">Java</button>
                             </div>
-                            <div class="skill-text col-md-5">
+                            <div class="skill-text col-lg-5 col-md-5 col-sm-6 d-flex justify-content-center">
                                 <button class="skill-btn btn">Python</button>
                             </div>
                         </div>
                         <div class="skill-div row d-flex justify-content-center">
-                            <div class="skill-text col-md-5">
+                            <div class="skill-text col-lg-5 col-md-5 col-sm-6 d-flex justify-content-center">
                                 <button class="skill-btn btn">PHP</button>
                             </div>
-                            <div class="skill-text col-md-5">
+                            <div class="skill-text col-lg-5 col-md-5 col-sm-6 d-flex justify-content-center">
                                 <button class="skill-btn btn">C++</strong>
                             </div>
                         </div> 
                         <div class="skill-div row d-flex justify-content-center">
-                            <div class="skill-text col-md-5">
+                            <div class="skill-text col-lg-5 col-md-5 col-sm-6 d-flex justify-content-center">
                                 <button class="skill-btn btn">Javascript</button>
                             </div>
-                            <div class="skill-text col-md-5">
+                            <div class="skill-text col-lg-5 col-md-5 col-sm-6 d-flex justify-content-center">
                                 <button class="skill-btn btn">HTML/CSS</button>
                             </div>
                         </div>
-                    </div>
-                    <!-- Tools -->
-                    <div class="work-position-wrap col-lg-4 col-md-6 col-sm-6">
-                        <h3 class="skill-heading">
+                    </div>    
+                    <div class="col">
+                        <h3 class="skill-heading" >
                             <strong>Tools</strong>
                         </h3>
                         <div class="skill-div row d-flex justify-content-center">
-                            <div class="skill-text col-md-5">
+                            <div class="skill-text col-lg-5 col-md-5 col-sm-6 d-flex justify-content-center">
                                 <button class="skill-btn btn">Git</button>
                             </div>
-                            <div class="skill-text col-md-5">
-                                <button class="skill-btn btn">Microsft Azure</button>
+                            <div class="skill-text col-lg-5 col-md-5 col-sm-6 d-flex justify-content-center">
+                                <button class="skill-btn btn">Azure</button>
                             </div>
                         </div>
                         <div class="skill-div row d-flex justify-content-center">
-                            <div class="skill-text col-md-5">
+                            <div class="skill-text col-lg-5 col-md-5 col-sm-6 d-flex justify-content-center">
                                 <button class="skill-btn btn">EAGLE</button>
                             </div>
-                            <div class="skill-text col-md-5">
+                            <div class="skill-text col-lg-5 col-md-5 col-sm-6 d-flex justify-content-center">
                                 <button class="skill-btn btn">Solidworks</button>
                             </div>
                         </div>
                         <div class="skill-div row d-flex justify-content-center">
-                            <div class="skill-text col-md-5">
+                            <div class="skill-text col-lg-5 col-md-5 col-sm-6 d-flex justify-content-center">
                                 <button class="skill-btn btn">3D Printing</button>
                             </div>
-                            <!-- <div class="skill-text col-md-5">
-                                <button class="skill-btn btn">Git</button>
-                            </div> -->
                         </div>
-                    </div>
-                    <!-- Electronics -->
-                    <div id="electronics-div" class="work-position-wrap col-lg-4 col-md-6 col-sm-6">
+                    </div> 
+                    <div class="col">
                         <h3 class="skill-heading">
                             <strong>Electronics</strong>
                         </h3>
                         <div class="skill-div row d-flex justify-content-center">
-                            <div class="skill-text col-md-5">
+                            <div class="skill-text col-lg-5 col-md-5 col-sm-6 d-flex justify-content-center">
                                 <button class="skill-btn btn">Arduino</button>
                             </div>
-                            <div class="skill-text col-md-5">
+                            <div class="skill-text col-lg-5 col-md-5 col-sm-6 d-flex justify-content-center">
                                 <button class="skill-btn btn">Raspberry Pi</button>
                             </div>
                         </div>
                         <div class="skill-div row d-flex justify-content-center">
-                            <div class="skill-text col-md-5">
+                            <div class="skill-text col-lg-5 col-md-5 col-sm-6 d-flex justify-content-center">
                                 <button class="skill-btn btn">Soldering</button>
                             </div> 
                         </div>
+                    </div> 
+                </div>
+
+                <div class="row" style="margin-top: 40px;">
+                    <div class="col">
+                        <h3 class="skill-heading">
+                            <strong>Robotics</strong>
+                        </h3>
+                        <div class="skill-div row d-flex justify-content-center">
+                            <div class="skill-text col-lg-3 col-md-3 col-sm-4 d-flex justify-content-center">
+                                <button class="skill-btn btn">ROS</button>
+                            </div>
+                            <div class="skill-text col-lg-3 col-md-3 col-sm-4 d-flex justify-content-center">
+                                <button class="skill-btn btn">Gazebo</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <h3 class="skill-heading">
+                            <strong>Game Development</strong>
+                        </h3>
+                        <div class="skill-div row d-flex justify-content-center">
+                            <div class="skill-text col-lg-5 col-md-5 col-sm-6 d-flex justify-content-center">
+                                <button class="skill-btn btn">Unity</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <br>
-                <div style="position: relative; margin-top: 5%; left: 15%;">
-                    <div class="row text-center">
-                        <div id="robotics-div" class="work-position-wrap col-lg-4 col-md-6 col-sm-6">
-                            <h3 class="skill-heading">
-                                <strong>Robotics</strong>
-                            </h3>
-                            <div class="skill-div row d-flex justify-content-center">
-                                <div class="skill-text col-md-5">
-                                    <button class="skill-btn btn">ROS</button>
-                                </div>
-                                <div class="skill-text col-md-5">
-                                    <button class="skill-btn btn">Gazebo</button>
-                                </div>
-                            </div>
-                
-                        </div>
-
-                        <!-- Game Development -->
-                        <div id="game-dev" class="work-position-wrap col-lg-4 col-md-6 col-sm-6">
-                            <h3 class="skill-heading">
-                                <strong>Game Development</strong>
-                            </h3>
-                            <div class="skill-div row d-flex justify-content-center">
-                                <div class="skill-text col-md-5">
-                                    <button class="skill-btn btn">Unity</button>
-                                </div>
-                                <div class="skill-text col-md-5">
-                                    <button class="skill-btn btn">Unreal </button>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div> 
             </div>
         </section>
 
-        <section id="contact-section" class="row">
+        <section id="contact-section" >
             <div class="nav-anchor-offset" id="contact-offset"></div>
-            <div id="form-img" class="d-flex justify-content-center align-self-center" >
-                <img src="/public/assets/images/contact-form-img.png">
-            </div>
-            <div id="form-container" class="container align-self-center">
-                <h1 id="contact-header" class="section-header text-center" style="color: white; font-size: 44px; font-weight: bold;">Contact</h1>
-                <p id="contact-text">Have a question or want to work together?</p>
-                <form id="contact-form">
-                    <div class="col">
-                        <div class="form-item">
-                            <div class="row">
-                                <label class="form-label" for="name">Name: </label>
-                            </div>
-                            <div class="row" style="height: 44px;">
-                                <input type="text" id="name" name="name" placeholder="Enter your name" required>
-                            </div>
-                        </div>
-                        <div class="form-item">
-                            <div class="row">
-                                <label class="form-label" for="name">Email </label>
-                            </div>
-                            <div class="row" style="height: 44px;">
-                                <input type="email" id="email" name="email" placeholder="Enter your email" required>
-                            </div>
-                        </div>
-                        <div class="form-item">
-                            <div class="row">
-                                <label class="form-label"  for="message">Message</label>
-                            </div>
-                            <div class="row" style="height: 200px;">
-                                <input type="text" id="message" name="message" placeholder="Leave a message" required>
-                            </div>
-                        </div>
-                        
-                    </div>
-                    <div class="text-center" style="margin-top: 20px;">
-                        <button id="contact-btn" class="btn" type="submit">Submit</button>
-                    </div>
-                </form>
-            </div>
-        </section>
+            <div style="height: 60.25vh; background-color: rgb(0,1,34);">
+                <div id="form-img" class="d-flex justify-content-center align-self-center w-100">
+                    <img src="/public/assets/images/contact-form-img.png">
+                </div>
+                <div id="form-container" class="container align-self-center justify-content-center">
+                    <h1 class="text-center" style="font-size: 44px; font-weight: bold; padding-top: 100px; color: white;">Contact</h1>
+                    <p id="contact-text" style="color: white;">Have a question or want to work together?</p>
+                    <a class="d-flex justify-content-center" style="margin-top: 60px" href="mailto:malik.omar.taylor@gmail.com?subject=Portfolio Site Email&body=TThe message">
+                        <button  class="btn slide" id="contact-btn-email" style="width: 300px; height: 65px; background-color: #d90429; color: white; font-size: 20px;"><i class="fa-solid fa-envelope"></i>
+                            Send Email
+                        </button>
+                    </a>
+                    <a class="d-flex justify-content-center" style="margin-top: 20px" href="https://www.linkedin.com/in/malik-taylor-251409194/">
+                        <button  class="btn slide" id="contact-btn-linkedin" style="width: 300px; height: 65px; font-size: 20px"><i class="fa-brands fa-linkedin"></i>
+                            Connet on LinkedIn
+                        </button>
+                    </a>
+                </div>
+                
 
-        <footer>
-            <div id="footer-select">
-                <a href="#hero-section" class="footer-link">Home</a>
-                <a href="#about-section" class="footer-link">About Me</a>
-                <a href="#project-section" class="footer-link">Projects</a>
-                <a href="#skills-section" class="footer-link">Skills</a>
-                <a href="#contact-section" class="footer-link">Contact</a>
+
             </div>
-        </footer>
+            <footer>
+                <div id="footer-content">
+                    <div id="footer-select">
+                        <a href="#hero-section" class="footer-link">Home</a>
+                        <a href="#about-offset" class="footer-link">About Me</a>
+                        <a href="#project-offset" class="footer-link">Projects</a>
+                        <a href="#skills-offset" class="footer-link">Skills</a>
+                        <a href="#contact-offset" class="footer-link">Contact</a>
+                    </div>
+                    <style>
+                        .footer-link{
+                            display: inline-block;
+                            position: relative;
+                        }
+
+                        .footer-link::before{
+                            position: absolute;
+                            content: "";
+                            display: block;
+                            width: 70rem;
+                            height: 2px;
+                            background: white;
+                            left: -920%;
+                            top: -200%;
+                        }
+
+                        .footer-link:after{
+                            position: absolute;
+                            content: "";
+                            display: block;
+                            width: 70rem;
+                            height: 2px;
+                            background: white;
+                            left: -920%;
+                            bottom: -200%;
+                        }
+
+                    </style>
+                </div>
+
+                <div class="row" style="padding: 0px 7.75% 0px 7%; margin-top: 90px;">
+                    <div class="col-6" style="color: white;">
+                        Copyright © 2022 Malik Taylor
+                    </div>
+                    <div class="col-6">
+                        <div id="social-contain" class="text-end">
+                            <a href="https://github.com/MalikTaylor" class="fab social-icon-red"><i class="fa-brands fa-square-github"></i></a>
+                            <a href="https://www.instagram.com/__maliktaylor/" class="fab social-icon-red fa-instagram"></a>
+                            <a href="https://www.linkedin.com/in/malik-taylor-251409194/" class="fab social-icon-red fa-linkedin"></a>
+                        </div>
+                    </div>
+                </div>
+
+            </footer>
+        </section>
     </body>
 </html>
