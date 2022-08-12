@@ -55,7 +55,7 @@ ul {
 
 .navbar-collapse{
     position: relative; 
-    justify-content: center;
+    justify-content: end;
     background-color: inherit;
 }
 
@@ -585,6 +585,7 @@ footer{
         top: 68px;
         width: 100vw;
         text-align: center;
+        justify-content: center;
     }
     
     .skill-btn{
