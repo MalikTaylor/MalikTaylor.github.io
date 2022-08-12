@@ -55,7 +55,7 @@ ul {
 
 .navbar-collapse{
     position: relative; 
-    justify-content: end;
+    justify-content: center;
     background-color: inherit;
 }
 
@@ -118,7 +118,6 @@ ul {
 }
 
 /* Hero Sectiom */
-
 #hero-section{
     height: 100vh;
     background-image: url("/public/assets/images/hero-img.png");
@@ -301,11 +300,20 @@ ul {
 #project-section{
     /* background-image: url(/public/assets/images/project-background.png); */
     /* background-repeat: no-repeat; */
+    justify-content: center;
+    text-align: center;
     background-color: #fff;
     min-height: 100vh;
     height: 100%;
     padding-bottom: 60px;
 }
+
+/* 
+#project-content{
+    justify-content: center !important;
+    display: block !important;
+    text-align: center !important;
+} */
 
 .project-nav-container{
     display: flex;
@@ -346,13 +354,12 @@ ul {
 .project-work-block{
     min-height: 366px;
     height: 100%;
-    position: relative;
     margin-top: 60px;
 }
 
 .project-image{
-    min-height: 100%;
-    max-height: 430px;
+    /* min-height: 100%; */
+    height: 430px;
     max-width: 400px;
     width: 100%;
     z-index: 1;
@@ -540,7 +547,7 @@ footer{
     color: #fff;
 }
 
-@media (max-width: 1000px){
+@media (max-width: 1270px){
 
     #about-content{
         margin: 20px;
@@ -563,6 +570,13 @@ footer{
         margin-bottom: 30px;
     }
 }
+
+@media (max-width: 1270px){
+    .project-description, .project-description-lft{
+        font-size: 12px;
+    }
+}
+
 
 @media(max-width: 991px){
     .navbar-collapse{
@@ -594,7 +608,6 @@ footer{
         font-size: medium;  
     }
 
-
     #about-section, #about-content, #project-section, #skills-section, #contact-section{
         height: fit-content;
     }
@@ -613,9 +626,9 @@ footer{
     .section-header{
         padding-bottom: 20px;
     }
-
-    #work-position-wrap{
-        width: 100px;
+    #abt-img-container{
+        box-shadow: -15px 15px 3px rgb(0,1,34),
+        15px -15px 3px #d2d7df;
     }
     .skill-btn{
         width: 100%;
@@ -635,11 +648,10 @@ footer{
     }
     .project-description, .project-description-lft{
         padding: 0px;
-        max-width: 100%;
+        width: 360px;
         background-color: inherit;
         box-shadow: none;
         float: none;
-        font-size: 12px;
     }
     .project-resources{
         float: left;
@@ -649,7 +661,6 @@ footer{
         padding: 0px;
         justify-content: start;
     }
-
     .project-links{
         width: auto;
         justify-content: start;
